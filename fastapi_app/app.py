@@ -6,7 +6,7 @@ api_router = APIRouter()
 
 
 @api_router.get("/ping")
-async def take_lock() -> str:
+async def ping() -> PlainTextResponse:
     return PlainTextResponse("pong")
 
 
