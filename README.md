@@ -23,7 +23,13 @@
 
 ## Usage
 
-- take lock
+- Curl
 ```bash
 curl -X GET http://0.0.0.0:8000/ping
+```
+
+- Response
+
+```bash
+pong
 ```
