@@ -1,8 +1,8 @@
 # FastAPI-template-repository
 
 ## Dependencies
-- docker-compose
-- python 3.9
+- docker compose
+- python 3.14
 
 ## Commands
 ### Install
