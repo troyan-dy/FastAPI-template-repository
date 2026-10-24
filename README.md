@@ -1,8 +1,8 @@
 # FastAPI-template-repository
 
 ## Dependencies
-- docker-compose
-- python 3.9
+- docker compose
+- python 3.14
 
 ## Commands
 ### Install
@@ -12,6 +12,7 @@
 - `make test`
 ### Linting
 - `make lint`
+- `make wps` (wemake-python-styleguide)
 
 ### Formatting
 - `make format`
