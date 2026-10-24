@@ -2,6 +2,8 @@ import uvicorn
 from fastapi import APIRouter, FastAPI
 from starlette.responses import PlainTextResponse
 
+DEFAULT_PORT = 8000
+
 api_router = APIRouter()
 
 
@@ -18,4 +20,4 @@ def create_app() -> FastAPI:
 
 app = create_app()
 if __name__ == "__main__":
-    uvicorn.run(app=app, host="0.0.0.0", port=8000)
+    uvicorn.run(app=app, host="0.0.0.0", port=DEFAULT_PORT)
