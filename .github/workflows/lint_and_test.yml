@@ -25,6 +25,9 @@ jobs:
       - name: Lint
         run: |
           make lint PYTHON=python
+      - name: WPS
+        run: |
+          make wps PYTHON=python
       - name: Tests
         run: |
           make test PYTHON=python

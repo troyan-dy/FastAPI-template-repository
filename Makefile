@@ -8,7 +8,10 @@ test:
 
 lint:
 	$(PYTHON) -m mypy app/
-	$(PYTHON) -m flake8 app/ tests/
+	$(PYTHON) -m flake8 app/ tests/ --select=E,W,F,C90
+
+wps:
+	$(PYTHON) -m flake8 app/ tests/ --select=WPS
 
 format:
 	$(PYTHON) -m black app/ tests/

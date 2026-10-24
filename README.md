@@ -12,6 +12,7 @@
 - `make test`
 ### Linting
 - `make lint`
+- `make wps` (wemake-python-styleguide)
 
 ### Formatting
 - `make format`

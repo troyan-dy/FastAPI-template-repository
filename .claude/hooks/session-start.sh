@@ -23,6 +23,9 @@ else
   "$VENV_DIR/bin/python" -m pip install -r requirements.txt -r resuirements.dev.txt
 fi
 
+# Sanity check: the wemake-python-styleguide flake8 plugin is installed.
+"$VENV_DIR/bin/python" -c "import wemake_python_styleguide"
+
 if [ -n "${CLAUDE_ENV_FILE:-}" ]; then
   {
     echo "export VIRTUAL_ENV=\"$VENV_DIR\""
